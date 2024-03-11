@@ -1,7 +1,8 @@
 .main {
     margin: 0 auto;
     width: 70%;
-    height: 100rem;
+    color: white;
+    background-image: url(../assets/imgs/main/image-10.jpg);
 }
 .nav-main {
     width: 100%;
@@ -10,9 +11,8 @@
     justify-content: space-between;
 }
 .icone {
-    padding: 1.2rem 5rem;
-    display: flex;
-    justify-content: space;
+    padding: 1.3rem 5rem;
+
 }
 .bi {
     border-radius: 50%;
@@ -23,4 +23,7 @@
 }
 .bi:hover {
     color: white;
+}
+.profile {
+    margin-bottom: 0.7rem;
 }
