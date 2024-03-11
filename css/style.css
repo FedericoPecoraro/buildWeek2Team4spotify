@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 70%;
   color: white;
-  background-image: url(../assets/imgs/main/image-10.jpg);
+  background-image: url(../assets/imgs/tenacious-d.jpg);
 }
 
 .nav-main {
@@ -13,7 +13,7 @@
 }
 
 .icone {
-  padding: 1.3rem 5rem;
+  padding: 1rem 1rem;
 }
 
 .bi {
@@ -21,6 +21,7 @@
   padding: 0 3px;
   color: #9E9D9E;
   font-size: 25px;
+  background-color: black;
 }
 
 .bi:hover {
@@ -29,6 +30,20 @@
 
 .profile {
   margin-bottom: 0.7rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -3px;
 }
 
 /*# sourceMappingURL=style.css.map */
