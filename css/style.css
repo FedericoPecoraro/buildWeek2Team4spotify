@@ -168,11 +168,25 @@
 }
 
 .music-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
   background-color: #000000;
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 72px;
+}
+
+.minibar {
+  display: flex;
+  background-color: #000000;
+  opacity: 1;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 a {
@@ -411,13 +425,6 @@ a {
   opacity: 0.4;
 }
 
-.music-player {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10000;
-}
-
 .album {
   width: 25%;
   display: flex;
@@ -571,11 +578,6 @@ a {
   appearance: none;
 }
 
-@media (max-width: 1000px) {
-  .library {
-    display: none;
-  }
-}
 .friends {
   display: flex;
   align-items: baseline;
@@ -629,6 +631,18 @@ a {
   margin: 48px 0;
   color: white;
   font-size: 48px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+  .minibar {
+    display: block;
+  }
+  .music-player {
+    bottom: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

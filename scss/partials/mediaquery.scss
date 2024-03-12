@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+
+  .minibar {
+    display: block;
+  }
+  .music-player {
+    bottom: 100px;
+  }
+}
