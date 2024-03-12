@@ -456,16 +456,20 @@ a {
 
 .friends {
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: baseline;
+    gap: 30px;
+}
+.friend-img {
+    align-self: center;
 }
 .friend-name {
     font-size: 10px;
+    
 }
 .friend-song {
     font-size: 10px;
 }
 .friend-time {
     font-size: 10px;
-
+    align-content: flex-start;
 }
