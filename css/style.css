@@ -181,9 +181,9 @@
 
 .minibar {
   display: flex;
+  justify-content: space-around;
   background-color: #000000;
   opacity: 1;
-  display: none;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -637,11 +637,8 @@ a {
   .sidebar {
     display: none;
   }
-  .minibar {
-    display: block;
-  }
   .music-player {
-    bottom: 100px;
+    bottom: 68px;
   }
 }
 
