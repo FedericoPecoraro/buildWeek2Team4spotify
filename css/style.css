@@ -582,6 +582,10 @@ a {
   appearance: none;
 }
 
+.friend {
+  display: none;
+}
+
 .friends {
   display: flex;
   align-items: baseline;
@@ -603,6 +607,167 @@ a {
 .friend-time {
   font-size: 10px;
   align-content: flex-start;
+}
+
+#player {
+  display: flex;
+  background-color: black;
+  padding: 2% 1% 2% 1%;
+  color: white;
+  width: 100%;
+  height: 11vh;
+  bottom: 0%;
+  z-index: 100;
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+
+/* left */
+.leftDiv {
+  display: flex;
+  align-items: center;
+}
+
+.leftDiv img {
+  width: 80px;
+  margin: 1% 4% 2% 1%;
+}
+
+.leftDiv div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftDiv p {
+  margin: 0;
+  margin-right: 15px;
+}
+
+.leftDiv h4 {
+  color: gray;
+  font-size: smaller;
+}
+
+.leftDiv svg {
+  width: 16px;
+  height: 16px;
+}
+
+#heart-fill {
+  display: none;
+}
+
+/* central */
+.centralDiv {
+  flex-basis: 65%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon-player-hp {
+  color: #9E9D9E;
+  font-size: 20px;
+}
+
+.icon-player-hp:hover {
+  color: white;
+}
+
+.icon-play-hp {
+  font-size: 40px;
+}
+
+.icon-play-hp:hover {
+  font-size: 45px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.timer {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.duration {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.centralDiv .svg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.progress-bar {
+  width: 730px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1db954;
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
+/* right */
+.rightDiv {
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 16px;
+}
+
+.rightDiv svg {
+  margin-right: 10px;
+}
+
+.play-icon-hp {
+  border-radius: 2px;
+  color: #9E9D9E;
+  background-color: transparent;
+  border: 1px solid #9E9D9E;
+  font-size: 10px;
+  padding: 3px;
+}
+
+.play-icon-hp:hover {
+  color: white;
+}
+
+.icon-md-hp {
+  display: none;
+}
+
+.rightDiv .progress-bar {
+  width: 100px;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.rightDiv .progress {
+  height: 100%;
+  background-color: #1db954;
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
+.rightDiv #volume-mute {
+  display: none;
 }
 
 .navbar-login {
@@ -642,12 +807,96 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
+  .centralDiv .progress-bar {
+    width: 550px;
+  }
+  .rightDiv .progress-bar {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .centralDiv .progress-bar {
+    width: 320px;
+  }
+  .rightDiv .progress-bar {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
   .sidebar {
     display: none;
   }
-  .music-player {
+  .leftDiv h4, .leftDiv img {
+    display: none;
+  }
+  .progress-container {
+    display: none;
+  }
+  .centralDiv .svg a {
+    display: none;
+  }
+  .rightDiv a {
+    display: none;
+  }
+  .icon-md-hp {
+    display: block;
+    z-index: 9000;
+    width: 100px;
+    height: 100px;
+  }
+  #player {
+    background-color: #232323;
+    flex-direction: column;
+    border-radius: 25px;
+    display: flex;
+    padding: 1%;
+    height: 9vh;
+    position: fixed;
+    z-index: 20;
     bottom: 80px;
+    border-radius: 0;
+  }
+  div {
+    display: block;
+  }
+  .leftDiv {
+    flex-direction: column;
+    flex-grow: 1;
+    max-height: 90px;
+    max-width: 50%;
+  }
+  .leftDiv h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollText 6s linear infinite;
+  }
+  @keyframes scrollText {
+    0% {
+      transform: translateX(25%);
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .rightDiv svg, .leftDiv svg, .centralDiv svg {
+    width: 20px;
+    height: 20px;
+    top: 33%;
+  }
+  .leftDiv h2 {
+    font-size: 14px;
+    margin-top: 30px;
   }
 }
 

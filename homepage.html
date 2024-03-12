@@ -316,103 +316,61 @@
           <p class="footer-txt"></p>
         </div>
       </div>
-      <div class="music-player">
-        <div class="album">
-          <div class="song-detail">
-            <img
-              src="./assets/imgs/main/image-1.jpg"
-              class="album-img"
-              alt=""
-            />
-            <div class="album-detail">
-              <p class="detail1">Demon</p>
-              <p class="detail2">Very Satanic Metal</p>
+      <section id="player">
+        <div class="leftDiv">
+          
+            <img src="https://api.deezer.com/album/366045987/image">
+        </div>
+  
+        <div class="centralDiv">
+          <div class="svg">
+           <a href="#"><i class="fa-solid fa-shuffle icon-player-hp"></i></a>
+  
+           <a href="#"><i class="fa-solid fa-backward-step icon-player-hp"></i></a>
+           <a href="#"><i class="fa-solid fa-circle-play icon-play-hp"></i></a>
+           
+           <a href="#"><i class="fa-solid fa-forward-step icon-player-hp"></i></a>
+           
+            <a href="#"><i class="fa-solid fa-retweet icon-player-hp"></i></a>
+          </div>
+          <div>
+            <div class="progress-container">
+              <div class="timer">0:00</div>
+              <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+              </div>
+              <div class="duration">0:30</div>
             </div>
           </div>
-          <div class="album-icon">
-            <img src="./Assets/album_icon1.png" id="alb-icon1" alt="" />
-            <img src="./Assets/album_icon2.png" id="alb-icon2" alt="" />
-          </div>
         </div>
+        
+        <div class="rightDiv">
+            
+          <a href="#"><i class="fa-solid fa-play play-icon-hp"></i></a>
+  
+          <a href="#"><i class="fa-solid fa-microphone icon-player-hp"></i></a>
+  
+          <a href="#"><i class="fa-solid fa-list-ul icon-player-hp"></i></a>
 
-        <div class="player">
-          <div class="player-control">
-            <a href="#"
-              ><img
-                src="./assets/icon/player_icon1.png"
-                class="player-control-icon"
-                alt=""
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/icon/player_icon2.png"
-                class="player-control-icon"
-                alt=""
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/icon/player_icon3.png"
-                class="player-control-icon"
-                id="play-btn"
-                alt=""
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/icon/player_icon4.png"
-                class="player-control-icon"
-                alt=""
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/icon/player_icon5.png"
-                class="player-control-icon"
-                alt=""
-            /></a>
-          </div>
-          <div class="playback-bar">
-            <span class="curr-time">00:00</span>
-            <input
-              type="range"
-              class="progress-bar"
-              step="1"
-              name=""
-              id=""
-              min="0"
-              max="100"
-            />
-            <span class="tot-time">03:33</span>
-          </div>
+          <a href="#"><i class="fa-regular fa-bookmark icon-player-hp" ></i></a>
+            
+          <a href="#"><i class="fa-solid fa-volume-high icon-player-hp"></i></a>
+          <div class="icon-md-hp">
+            <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-play icon-play-hp"></i></a>
         </div>
-
-        <div class="control">
-          <img src="./assets/icon/controls_icon1.png" alt="" />
-          <img src="./assets/icon/controls_icon2.png" alt="" />
-          <img
-            src="./assets/icon/controls_icon3.png"
-            class="cont-icon"
-            id="cont-icon3"
-            alt=""
-          />
-          <img
-            src="./assets/icon/controls_icon4.png"
-            class="cont-icon"
-            id="cont-icon4"
-            alt=""
-          />
-          <div class="volume">
-            <img src="./assets/icon/controls_icon5.png" alt="" />
-            <input
-              type="range"
-              class="vol-bar"
-              step="1"
-              name=""
-              id=""
-              min="0"
-              max="100"
-            />
+          <div>
+            <div class="progress-container">
+              <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress" style="width: 36%;"></div>
+              </div>
+            </div>
           </div>
+  
+          <a href="#"><i class="fa-solid fa-arrows-turn-right icon-player-hp"></i></a>
         </div>
-      </div>
+      </section>
 
       <div class="library friend">
         <div class="options">

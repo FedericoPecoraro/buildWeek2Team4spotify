@@ -5,15 +5,106 @@
 }
 
 
-@media screen and (max-width: 768px) {
-  .sidebar {
-    display: none;
+@media screen and (max-width: 1250px) {
+  .centralDiv .progress-bar {
+      width: 550px;
   }
-  .music-player {
-    bottom: 80px;
+  .rightDiv .progress-bar {
+      width: 70px;
   }
-  
 }
+
+@media screen and (max-width: 1024px) {
+  .centralDiv .progress-bar {
+      width: 320px;
+  }
+  .rightDiv .progress-bar {
+      width: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+      .sidebar{
+        display: none;
+      }
+      .leftDiv h4, .leftDiv img{
+          display: none;
+      }
+      .progress-container{
+          display: none;
+      }
+      .centralDiv .svg a{
+          display: none;
+      }
+      .rightDiv a  {
+          display: none;
+      }
+      .icon-md-hp{
+        display: block;
+        z-index: 9000;
+        width: 100px;
+        height: 100px;
+      }
+      #player{
+          background-color: #232323;
+          flex-direction: column;
+          border-radius: 25px;
+          display: flex;
+          padding: 1%;
+          height: 9vh;
+          position: fixed;
+          z-index: 20;
+          bottom: 80px;
+          border-radius: 0; 
+      }
+      div{
+          display: block;
+      }
+      .leftDiv{
+          flex-direction: column;
+          flex-grow: 1;
+          max-height: 90px;
+          max-width: 50%;
+          
+      }
+      .leftDiv h2 {
+          margin-top: 25px;
+          font-size: 20px;
+          
+          position: relative;
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
+          animation: scrollText 6s linear infinite;
+        }
+        
+        @keyframes scrollText {
+          0% {
+            transform: translateX(25%);
+            opacity: 0;
+          }
+          30%{
+              opacity: 1;
+          }
+          100% {
+            transform: translateX(-120%);
+          }
+        }
+  }
+
+  @media screen and (max-width: 430px){
+      .rightDiv svg, .leftDiv svg, .centralDiv svg {
+          width: 20px;
+          height: 20px;
+          top: 33%;
+      }
+      .leftDiv h2{
+          font-size: 14px;
+          margin-top: 30px;
+      }
+      
+  }
+
 
 
 
