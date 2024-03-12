@@ -1,8 +1,33 @@
-@media screen and (max-width: 1024px) {
+@media  screen and (max-width: 1024px) {
+  .friend {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
   .sidebar {
     display: none;
   }
   .music-player {
-    bottom: 68px;
+    bottom: 80px;
   }
+  
 }
+
+
+
+
+
+
+//.music-player {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  z-index: 10000;
+//  background-color: #000000;
+//  position: fixed;
+//  bottom: 0;
+//  width: 100%;
+//  height: 82px;
+//}

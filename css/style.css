@@ -176,17 +176,21 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 72px;
+  height: 82px;
 }
 
 .minibar {
   display: flex;
   justify-content: space-around;
   background-color: #000000;
-  opacity: 1;
+  opacity: 0.7;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.mini {
+  padding-top: 15px;
 }
 
 a {
@@ -634,11 +638,16 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+  .friend {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .sidebar {
     display: none;
   }
   .music-player {
-    bottom: 68px;
+    bottom: 80px;
   }
 }
 
