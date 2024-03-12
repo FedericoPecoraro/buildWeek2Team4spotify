@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Lettore web: musica per tutti </title>
+    <link rel="shortcut icon" href="./assets/icon/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+
+            <div class="nav">
+
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+                
+            </div>
+            
+            <div class="library">
+
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/icon/library_icon.png" alt="library icon">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/icon/backward_icon.png" alt="">
+                    <img src="./assets/icon/forward_icon.png" class="hide" alt="">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+
+            
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/imgs/main/image-1.jpg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-2.jpg" class="card-img" alt="">
+                    <p class="card-title">POV: la tua estate e' un film</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Trending now near you</h2>
+                <p>Show all</p>
+            </div>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-3.jpg" class="card-img" alt="">
+                    <p class="card-title">Massima concetrazione</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-4.jpg" class="card-img" alt="">
+                    <p class="card-title">Peaceful piano</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-5.jpg" class="card-img" alt="">
+                    <p class="card-title">Lofi Beats</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-6.jpg" class="card-img" alt="">
+                    <p class="card-title">Jazz Vibes</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>Popular albums</h2>
+                <p>Show all</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/imgs/main/image-7.jpg" class="card-img" alt="">
+                    <p class="card-title">Goodmorning Coffe</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-8.jpg" class="card-img" alt="">
+                    <p class="card-title">sanguegiovane</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-9.jpg" class="card-img" alt="">
+                    <p class="card-title">Sing in the shower</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-10.jpg" class="card-img" alt="">
+                    <p class="card-title">Good vibes</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>Featured Charts</h2>
+                <p>Show all</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/imgs/main/image-11.jpg" class="card-img" alt="">
+                    <p class="card-title">B</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/main/image-12.jpg" class="card-img" alt="">
+                    <p class="card-title">R</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/main/image-13.jpg" class="card-img" alt="">
+                    <p class="card-title">I</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-14.jpg" class="card-img" alt="">
+                    <p class="card-title">I</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Best</h2>
+                <p>Show all</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/imgs/main/image-15.jpg" class="card-img" alt="">
+                    <p class="card-title">P</p>
+                    <p class="card-info">Ultimte 101 Punjabi Hits with Harrdy...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/main/image-16.jpg" class="card-img" alt="">
+                    <p class="card-title">T</p>
+                    <p class="card-info">Finest set of telgu music from the past...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/main/image-17.jpg" class="card-img" alt="">
+                    <p class="card-title">Br</p>
+                    <p class="card-info">B bole toh biggest blockbusters, right...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/main/image-18.jpg" class="card-img" alt="">
+                    <p class="card-title">I</p>
+                    <p class="card-info">Best of the Indian Indie Scene. Cover...</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Popular artists</h2>
+                <p>Show all</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/imgs/search/image-1.jpeg" class="card-img artist" alt="">
+                    <p class="card-title"></p>
+                    <p class="card-info">Artist</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/search/image-2.jpg" class="card-img artist" alt="">
+                    <p class="card-title"></p>
+                    <p class="card-info">Artist</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/search/image-3.jpg" class="card-img artist" alt="">
+                    <p class="card-title"></p>
+                    <p class="card-info">Artist</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/imgs/search/image-4.jpg" class="card-img artist" alt="">
+                    <p class="card-title"></p>
+                    <p class="card-info">Artist</p>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="line"></div>
+                <p class="footer-txt"></p>
+            </div>
+            
+
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="song-detail">
+                    <img src="./assets/imgs/main/image-1.jpg" class="album-img" alt="">
+                    <div class="album-detail">
+                        <p class="detail1">Demon</p>
+                        <p class="detail2">Very Satanic Metal</p>
+                    </div>
+                </div>
+                <div class="album-icon">
+                    <img src="./Assets/album_icon1.png" id="alb-icon1" alt="">
+                    <img src="./Assets/album_icon2.png" id="alb-icon2" alt="">
+                </div>
+            </div>
+
+            <div class="player">
+                <div class="player-control">
+                    <img src="./assets/icon/player_icon1.png" class="player-control-icon" alt="">
+                    <img src="./assets/icon/player_icon2.png" class="player-control-icon" alt="">
+                    <img src="./assets/icon/player_icon3.png" class="player-control-icon" id="play-btn" alt="">
+                    <img src="./assets/icon/player_icon4.png" class="player-control-icon" alt="">
+                    <img src="./assets/icon/player_icon5.png" class="player-control-icon" alt="">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" class="progress-bar" step="1" name="" id="" min="0" max="100">
+                    <span class="tot-time">03:33</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <img src="./assets/icon/controls_icon1.png" alt="">
+                <img src="./assets/icon/controls_icon2.png" alt="">
+                <img src="./assets/icon/controls_icon3.png" class="cont-icon" id="cont-icon3" alt="">
+                <img src="./assets/icon/controls_icon4.png" class="cont-icon" id="cont-icon4" alt="">
+                <div class="volume">
+                    <img src="./assets/icon/controls_icon5.png" alt="">
+                    <input type="range" class="vol-bar" step="1" name="" id="" min="0" max="100">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
