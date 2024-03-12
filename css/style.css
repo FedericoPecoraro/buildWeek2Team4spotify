@@ -17,7 +17,7 @@
   height: 5rem;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1030;
 }
@@ -117,7 +117,7 @@
   color: white;
 }
 
-body {
+.body-hp {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   background-color: black;
@@ -554,7 +554,7 @@ a {
   border-radius: 5px;
 }
 
-h2 {
+.h2 {
   text-align: center;
   margin: 48px 0;
   color: white;
