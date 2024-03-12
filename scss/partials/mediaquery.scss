@@ -23,28 +23,43 @@
   }
 }
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 768px) { 
       .sidebar{
         display: none;
       }
-      .leftDiv h4, .leftDiv img{
-          display: none;
+      .leftDiv2{
+        display: none;
       }
+      
       .progress-container{
-          display: none;
+        display: none;
       }
-      .centralDiv .svg a{
-          display: none;
+      .dis-none{
+        display: none;
       }
-      .rightDiv a  {
-          display: none;
-      }
-      .icon-md-hp{
-        display: block;
-        z-index: 9000;
-        width: 100px;
-        height: 100px;
-      }
+      .rightDiv a i{
+        font-size: 40px;
+        position: absolute;
+        left: 66%;
+        top: 14%;
+        margin: 1%;
+    }
+    .leftDiv a{
+        position: absolute;
+        font-size: 40px;
+        left: 77%;
+        top: 15%;
+        margin: 1%;
+        margin-right: 2%;
+    }
+    
+    .centralDiv a{
+        font-size: 40px;
+        position: absolute;
+        left: 86%;
+        top: 15%;
+        margin: 1%;
+    }
       #player{
           background-color: #232323;
           flex-direction: column;
@@ -54,7 +69,7 @@
           height: 9vh;
           position: fixed;
           z-index: 20;
-          bottom: 80px;
+          bottom: 73px;
           border-radius: 0; 
       }
       div{
@@ -70,7 +85,6 @@
       .leftDiv h2 {
           margin-top: 25px;
           font-size: 20px;
-          
           position: relative;
           display: inline-block;
           white-space: nowrap;
@@ -90,13 +104,13 @@
             transform: translateX(-120%);
           }
         }
+
   }
 
   @media screen and (max-width: 430px){
-      .rightDiv svg, .leftDiv svg, .centralDiv svg {
-          width: 20px;
-          height: 20px;
-          top: 33%;
+      .rightDiv a i, .leftDiv a, .centralDiv a i {
+          font-size: 20px;
+          top: 38%;
       }
       .leftDiv h2{
           font-size: 14px;

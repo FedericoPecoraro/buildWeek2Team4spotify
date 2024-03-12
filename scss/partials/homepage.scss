@@ -18,7 +18,12 @@
   border-radius: 1rem;
   margin-right: 0.5rem;
 }
-
+.icon-nav-hp:hover{
+  color: white;
+}
+.img-profile-hp{
+  border-radius: 50%;
+}
 .main-content {
   background-color: #121212;
   flex: 1;
@@ -64,15 +69,26 @@
   display: flex;
   justify-content: space-around;
   background-color: #000000;
+  align-items: center;
   opacity: 0.7;
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-.mini{
-  padding-top: 15px;
+  height: 74px;
 }
 
+.icon-home-hp{
+  padding-left: 13px;
+  padding-bottom: 5px;
+}
+.icon-libreria-hp{
+  padding-left: 40px;
+  padding-bottom: 5px;
+}
+.icon-cerca-hp{
+  padding-left: 13px;
+  padding-bottom: 5px;
+}
 a {
   text-decoration: none;
   color: #ffffff;
@@ -513,25 +529,13 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-
-.leftDiv p {
-  margin: 0;
-  margin-right: 15px;
-}
-
 .leftDiv h4{
   color: gray;
   font-size: smaller;
 }
-.leftDiv svg{
-  width: 16px;
-  height: 16px;
+.heart-fill:hover{
+  color: green;
 }
-
-#heart-fill{
-  display: none;
-}
-
 /* central */
 .centralDiv{
   flex-basis: 65%;

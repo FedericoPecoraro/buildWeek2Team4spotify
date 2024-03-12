@@ -16,6 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -24,12 +25,12 @@
       <div class="sidebar">
         <div class="nav">
           <div class="nav-option">
-            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house icon-nav-hp"></i>
             <a href="#">Home</a>
           </div>
 
           <div class="nav-option">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass icon-nav-hp"></i>
             <a href="#">Search</a>
           </div>
         </div>
@@ -38,7 +39,7 @@
           <div class="options">
             <div class="lib-option nav-option">
               <img src="./assets/icon/library_icon.png" alt="library icon" />
-              <a href="#">Your Library</a>
+              <a href="#" class="icon-nav-hp">Your Library</a>
             </div>
 
             <div class="icons">
@@ -82,14 +83,15 @@
             <img src="./assets/icon/forward_icon.png" class="hide" alt="" />
           </div>
           <div class="sticky-nav-options">
-            <a href="#"><i class="fa-regular fa-bell bi-ap"></i></a>
-            <a href="#"><i class="fa-solid fa-users bi-ap"></i></a>
+            <a href="#"><i class="fa-regular fa-bell bi-ap icon-nav-hp"></i></a>
+            <a href="#"><i class="fa-solid fa-users bi-ap icon-nav-hp"></i></a>
             <a href="#"
               ><img
-                src="./assets/imgs/main/image-1.jpg"
-                width="32"
-                height="32"
+                src="./assets/imgs/michele.jpg"
+                width="34"
+                height="34"
                 alt="Profile"
+                class="img-profile-hp"
             /></a>
           </div>
         </div>
@@ -318,20 +320,25 @@
       </div>
       <section id="player">
         <div class="leftDiv">
+          <img class="leftDiv2" src="https://api.deezer.com/album/366045987/image">
+          <div class="leftDiv2">
+            <h2>viola feat salmo</h2>
+            <h4 class="leftDiv2">fedez</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-heart heart-fill"></i></a>
           
-            <img src="https://api.deezer.com/album/366045987/image">
         </div>
-  
-        <div class="centralDiv">
+
+          <div class="centralDiv">
           <div class="svg">
-           <a href="#"><i class="fa-solid fa-shuffle icon-player-hp"></i></a>
+           <a href="#"><i class="fa-solid fa-shuffle icon-player-hp dis-none"></i></a>
   
-           <a href="#"><i class="fa-solid fa-backward-step icon-player-hp"></i></a>
+           <a href="#"><i class="fa-solid fa-backward-step icon-player-hp dis-none"></i></a>
            <a href="#"><i class="fa-solid fa-circle-play icon-play-hp"></i></a>
            
-           <a href="#"><i class="fa-solid fa-forward-step icon-player-hp"></i></a>
+           <a href="#"><i class="fa-solid fa-forward-step icon-player-hp dis-none"></i></a>
            
-            <a href="#"><i class="fa-solid fa-retweet icon-player-hp"></i></a>
+            <a href="#"><i class="fa-solid fa-retweet icon-player-hp dis-none"></i></a>
           </div>
           <div>
             <div class="progress-container">
@@ -346,20 +353,16 @@
         
         <div class="rightDiv">
             
-          <a href="#"><i class="fa-solid fa-play play-icon-hp"></i></a>
+          <a href="#"><i class="fa-solid fa-play play-icon-hp dis-none"></i></a>
   
-          <a href="#"><i class="fa-solid fa-microphone icon-player-hp"></i></a>
+          <a href="#"><i class="fa-solid fa-microphone icon-player-hp dis-none"></i></a>
   
-          <a href="#"><i class="fa-solid fa-list-ul icon-player-hp"></i></a>
+          <a href="#"><i class="fa-solid fa-list-ul icon-player-hp dis-none"></i></a>
 
-          <a href="#"><i class="fa-regular fa-bookmark icon-player-hp" ></i></a>
+          <a href="#"><i class="fa-regular fa-bookmark icon-player-hp dis-none" ></i></a>
             
           <a href="#"><i class="fa-solid fa-volume-high icon-player-hp"></i></a>
-          <div class="icon-md-hp">
-            <a href="#"><i class="fa-solid fa-volume-high"></i></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-circle-play icon-play-hp"></i></a>
-        </div>
+        
           <div>
             <div class="progress-container">
               <div class="progress-bar" id="progress-bar">
@@ -368,7 +371,7 @@
             </div>
           </div>
   
-          <a href="#"><i class="fa-solid fa-arrows-turn-right icon-player-hp"></i></a>
+          <a href="#"><i class="fa-solid fa-arrows-turn-right icon-player-hp dis-none"></i></a>
         </div>
       </section>
 
@@ -444,17 +447,17 @@
     </div>
     <div class="minibar">
       <div class="mini">
-        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-house icon-home-hp "></i>
         <p>Home</p>
       </div>
 
-      <div class="mini">
-        <i class="fa-solid fa-magnifying-glass"></i>
+      <div>
+        <i class="fa-solid fa-magnifying-glass icon-cerca-hp "></i>
         <p>Cerca</p>
       </div>
 
-      <div class="mini">
-        <i class="fa-regular fa-bookmark"></i>
+      <div>
+        <i class="fa-regular fa-bookmark icon-libreria-hp "></i>
         <p>La tua libreria</p>
       </div>
     </div>
