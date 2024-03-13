@@ -4,23 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icon/logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Login - Spotify</title>
 </head>
 <body class="bg-white">
     <header class="navbar-login">
-        <div class="logo">
-            <a href="#">
+        <div class="logo-login">
+            <a href="https://open.spotify.com/intl-it">
                 <img src="./assets/icon/logo complete inverted.png" alt="logo" id="navbar-logo">
             </a>
         </div>
     </header>
 
-    <section class="box-container">
-        <div class="main">
-            <h2 class="h2">Log in to Spotify</h2>
+    <section class="box-container-login">
+        <div class="main-login">
+            <h2 class="h2-login">Log in to Spotify</h2>
+            <div class="account-connect-login">
+                <button class="a-c-btn-login" id="google-access-login"><i class="fa-brands fa-google icon-login"></i><span>Continue with Google</span></button>
+                <button class="a-c-btn-login" id="facebook-access-login"><i class="fa-brands fa-facebook icon-login"></i><span>Continue with Facebook</span></button>
+                <button class="a-c-btn-login" id="apple-access-login"><i class="fa-brands fa-apple icon-login"></i><span>Continue with Apple</span></button>
+            </div>
+
+            <hr class="hr-login">
+
+            <div class="log-in">
+                <form class="form-login">
+                    <label class="label-login">Email or Username</label>
+                    <input class="input-login" type="text" placeholder="Email or username">
+                    <label class="label-login">Password</label>
+                    <input class="input-login" type="password" placeholder="Password">
+                    <i class="fa-regular fa-eye icon-password" id="eye-icon-visibile"></i>
+                    <i class="fa-regular fa-eye-slash icon-password" id="eye-icon-privacy"></i>
+
+                </form>
+            </div>
+
         </div>
     </section>
+
+    <script src="./assets/js/login.js"></script>
 </body>
 </html>
