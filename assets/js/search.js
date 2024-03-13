@@ -121,7 +121,7 @@ searchForm.addEventListener("submit", (e) => {
   searchResults();
 });
 
-// Fetch iniziale per ottenere informazioni su una traccia specifica e popolare l'elemento del giocatore audio
+// Fetch iniziale per ottenere informazioni su una traccia specifica e popolare l'elemento del player audio
 fetch(`https://deezerdevs-deezer.p.rapidapi.com/track/1963530567`, searchOptions)
 .then((response) => response.json())
 .then((datas)  => {
