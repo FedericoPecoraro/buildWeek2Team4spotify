@@ -144,4 +144,5 @@ function playerApi(results){
   LeftDivArtistName.innerHTML = results.artist.name
   LeftDivTrackName.innerHTML = results.title
 
-  }
+}
+

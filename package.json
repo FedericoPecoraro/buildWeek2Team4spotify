@@ -7,5 +7,8 @@
     "compile": "sass scss/style.scss css/style.css -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
 }
