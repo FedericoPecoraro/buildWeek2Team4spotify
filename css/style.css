@@ -1,122 +1,46 @@
-.body-ap {
-  background-color: black;
-}
-
-.section-ap {
-  color: white;
-  background-color: #1C1C1C;
-}
-
-.main-ap {
-  color: white;
+/* INIZIO ARTIST2 */
+.hero-ar {
+  height: 250px;
   background-image: url(../assets/imgs/tenacious-d.jpg);
-}
-
-.nav-main {
-  max-width: 100%;
-  height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1030;
-}
-
-.icone {
-  padding: 1rem 1rem;
-}
-
-.bi-ap {
-  border-radius: 50%;
-  padding: 0 3px;
-  color: #9E9D9E;
-  font-size: 25px;
-  background-color: black;
-}
-
-.bi:hover {
-  color: white;
-}
-
-.profile {
-  margin-bottom: 0.7rem;
-}
-
-.hero {
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  padding-top: 5rem;
-  padding-left: 1rem;
-  padding-bottom: 1.5rem;
+  justify-content: end;
 }
 
-.title {
-  font-size: 100px;
-  font-weight: 800;
-  letter-spacing: -3px;
-}
-
-.play {
-  padding: 1rem;
-}
-
-.fa-play {
-  color: black;
-  background-color: #1ED760;
-  border-radius: 50%;
-  padding: 1.2rem 1.4rem;
-  font-size: 1.5rem;
-}
-
-.icon-ap {
-  color: grey;
-  font-size: 2rem;
-  margin: 1.2rem;
-}
-
-.icon-ap:hover {
-  color: white;
-}
-
-.follow-btn {
-  border-radius: 30px;
-  background-color: transparent;
-  color: white;
-  font-weight: bold;
-  padding: 0.2rem 0.7rem;
-  border: 1px solid grey;
-}
-
-.popolari {
-  padding-left: 1rem;
-  font-weight: bold;
-}
-
-.parent {
+.player-hero-ar {
   display: flex;
-  justify-content: space-between;
-  padding: 0.7rem 3rem;
+  gap: 20px;
 }
 
-.child {
+.container-lista-canzoni-ar {
+  padding-left: 25px;
+}
+
+.canzone-lista-ar {
   display: flex;
-  gap: 10px;
+  align-items: center;
 }
 
-.discografia-div {
-  background-color: #1C1C1C;
+.titolo-song-ar {
+  padding-left: 10px;
+  width: 40%;
 }
 
-.discografia {
-  color: white;
-  padding-left: 1rem;
-  font-weight: bold;
+.to-right {
+  display: flex;
+  justify-content: end;
 }
 
-.card-ap {
-  color: white;
+.riproduzioni-ar {
+  width: 30%;
 }
 
+.durata-ar {
+  width: 24%;
+}
+
+/* FINE ARTIST2 */
 .body-hp {
   font-family: "Montserrat", sans-serif;
   margin: 0;

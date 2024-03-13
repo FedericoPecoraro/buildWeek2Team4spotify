@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Lettore web: musica per tutti</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/download.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="body-hp">
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option">
+            <i class="fa-solid fa-house icon-nav-hp"></i>
+            <a href="#">Home</a>
+          </div>
+
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass icon-nav-hp"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./assets/icon/library_icon.png" alt="library icon" />
+              <a href="#" class="icon-nav-hp">Your Library</a>
+            </div>
+
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy, we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./assets/icon/backward_icon.png" alt="" />
+            <img src="./assets/icon/forward_icon.png" class="hide" alt="" />
+          </div>
+          <div class="sticky-nav-options">
+            <a href="#"><i class="fa-regular fa-bell bi-ap icon-nav-hp"></i></a>
+            <a href="#"><i class="fa-solid fa-users bi-ap icon-nav-hp"></i></a>
+            <a href="#"
+              ><img
+                src="./assets/imgs/michele.jpg"
+                width="34"
+                height="34"
+                alt="Profile"
+                class="img-profile-hp"
+            /></a>
+          </div>
+        </div>
+
+           <!-- INIZIO PARTE AGGIUNTA -->
+
+           <div class="hero-ar">
+            <span><i class="fa-solid fa-certificate"></i>Artista Verificato</span>
+            <h2>Tenacious D</h2>
+            <p>2.987.456 Ascoltatori Mensili</p>
+        </div>
+
+        <section>
+
+            <div class="player-hero-ar">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-shuffle icon"></i></a>
+                <button type="button" class="follow-btn">Following</button>
+                <a href="#"><i class="fa-solid fa-ellipsis icon"></i></a>
+            </div>
+            <h3>Popolari</h3>
+
+            <ol class="container-lista-canzoni-ar">
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="canzone-lista-ar">
+                        <img class="icona-cantante-ar" src="./assets/imgs/main/image-17.jpg" alt="" width="32" height="32">
+                        <p class="titolo-song-ar">song</p>
+                        <p class="riproduzioni-ar to-right">200000000</p>
+                        <p class="durata-ar to-right">4.06</p>
+                    </div>
+                </li>
+            </ol>
+
+    <!-- FINE PARTE AGGIUNTA -->
+
+        <h2>Recently Played</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/imgs/main/image-1.jpg" class="card-img" alt="" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/imgs/main/image-2.jpg" class="card-img" alt="" />
+            <p class="card-title">POV: la tua estate e' un film</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Trending now near you</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/imgs/main/image-3.jpg" class="card-img" alt="" />
+            <p class="card-title">Massima concetrazione</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/imgs/main/image-4.jpg" class="card-img" alt="" />
+            <p class="card-title">Peaceful piano</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/imgs/main/image-5.jpg" class="card-img" alt="" />
+            <p class="card-title">Lofi Beats</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/imgs/main/image-6.jpg" class="card-img" alt="" />
+            <p class="card-title">Jazz Vibes</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Popular albums</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/imgs/main/image-7.jpg" class="card-img" alt="" />
+            <p class="card-title">Goodmorning Coffe</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/imgs/main/image-8.jpg" class="card-img" alt="" />
+            <p class="card-title">sanguegiovane</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/imgs/main/image-9.jpg" class="card-img" alt="" />
+            <p class="card-title">Sing in the shower</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-10.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">Good vibes</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Featured Charts</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-11.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">B</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-12.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">R</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-13.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">I</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-14.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">I</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Best</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-15.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">P</p>
+            <p class="card-info">Ultimte 101 Punjabi Hits with Harrdy...</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-16.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">T</p>
+            <p class="card-info">Finest set of telgu music from the past...</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-17.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">Br</p>
+            <p class="card-info">B bole toh biggest blockbusters, right...</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/main/image-18.jpg"
+              class="card-img"
+              alt=""
+            />
+            <p class="card-title">I</p>
+            <p class="card-info">Best of the Indian Indie Scene. Cover...</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Popular artists</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="./assets/imgs/search/image-1.jpeg"
+              class="card-img artist"
+              alt=""
+            />
+            <p class="card-title"></p>
+            <p class="card-info">Artist</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/search/image-2.jpg"
+              class="card-img artist"
+              alt=""
+            />
+            <p class="card-title"></p>
+            <p class="card-info">Artist</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/search/image-3.jpg"
+              class="card-img artist"
+              alt=""
+            />
+            <p class="card-title"></p>
+            <p class="card-info">Artist</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/imgs/search/image-4.jpg"
+              class="card-img artist"
+              alt=""
+            />
+            <p class="card-title"></p>
+            <p class="card-info">Artist</p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="line"></div>
+          <p class="footer-txt"></p>
+        </div>
+      </div>
+      <section id="player">
+        <div class="leftDiv">
+          <img class="leftDiv2" src="https://api.deezer.com/album/366045987/image">
+          <div class="leftDiv2">
+            <h2>viola feat salmo</h2>
+            <h4 class="leftDiv2">fedez</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-heart heart-fill"></i></a>
+          
+        </div>
+
+          <div class="centralDiv">
+          <div class="svg">
+           <a href="#"><i class="fa-solid fa-shuffle icon-player-hp dis-none"></i></a>
+  
+           <a href="#"><i class="fa-solid fa-backward-step icon-player-hp dis-none"></i></a>
+           <a href="#"><i class="fa-solid fa-circle-play icon-play-hp"></i></a>
+           
+           <a href="#"><i class="fa-solid fa-forward-step icon-player-hp dis-none"></i></a>
+           
+            <a href="#"><i class="fa-solid fa-retweet icon-player-hp dis-none"></i></a>
+          </div>
+          <div>
+            <div class="progress-container">
+              <div class="timer">0:00</div>
+              <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+              </div>
+              <div class="duration">0:30</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="rightDiv">
+            
+          <a href="#"><i class="fa-solid fa-play play-icon-hp dis-none"></i></a>
+  
+          <a href="#"><i class="fa-solid fa-microphone icon-player-hp dis-none"></i></a>
+  
+          <a href="#"><i class="fa-solid fa-list-ul icon-player-hp dis-none"></i></a>
+
+          <a href="#"><i class="fa-regular fa-bookmark icon-player-hp dis-none" ></i></a>
+            
+          <a href="#"><i class="fa-solid fa-volume-high icon-player-hp"></i></a>
+        
+          <div>
+            <div class="progress-container">
+              <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress" style="width: 36%;"></div>
+              </div>
+            </div>
+          </div>
+  
+          <a href="#"><i class="fa-solid fa-arrows-turn-right icon-player-hp dis-none"></i></a>
+        </div>
+      </section>
+
+      <div class="library friend">
+        <div class="options">
+          <div class="lib-option nav-option">
+            <a href="#">Attività amici</a>
+          </div>
+
+          <div class="icons">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="friends">
+          <img
+            src="https://github.com/twbs.png"
+            alt="twbs"
+            width="32"
+            height="32"
+            class="friend-img"
+          />
+          <div class="friend-content">
+            <p class="friend-name">Fred Pecoraro</p>
+            <p class="friend-song">Tenacious-D - Fuck Her Gently</p>
+          </div>
+          <small class="friend-time">now</small>
+        </div>
+        <div class="friends">
+          <img
+            src="https://github.com/twbs.png"
+            alt="twbs"
+            width="32"
+            height="32"
+            class="friend-img"
+          />
+          <div class="friend-content">
+            <p class="friend-name">Fred Pecoraro</p>
+            <p class="friend-song">Tenacious-D - Fuck Her Gently</p>
+          </div>
+          <small class="friend-time">now</small>
+        </div>
+        <div class="friends">
+          <img
+            src="https://github.com/twbs.png"
+            alt="twbs"
+            width="32"
+            height="32"
+            class="friend-img"
+          />
+          <div class="friend-content">
+            <p class="friend-name">Fred Pecoraro</p>
+            <p class="friend-song">Tenacious-D - Fuck Her Gently</p>
+          </div>
+          <small class="friend-time">now</small>
+        </div>
+        <div class="friends">
+          <img
+            src="https://github.com/twbs.png"
+            alt="twbs"
+            width="32"
+            height="32"
+            class="friend-img"
+          />
+          <div class="friend-content">
+            <p class="friend-name">Fred Pecoraro</p>
+            <p class="friend-song">Tenacious-D - Fuck Her Gently</p>
+          </div>
+          <small class="friend-time">now</small>
+        </div>
+      </div>
+    </div>
+    <div class="minibar">
+      <div class="mini">
+        <i class="fa-solid fa-house icon-home-hp "></i>
+        <p>Home</p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-magnifying-glass icon-cerca-hp "></i>
+        <p>Cerca</p>
+      </div>
+
+      <div>
+        <i class="fa-regular fa-bookmark icon-libreria-hp "></i>
+        <p>La tua libreria</p>
+      </div>
+    </div>
+  </body>
+</html>
