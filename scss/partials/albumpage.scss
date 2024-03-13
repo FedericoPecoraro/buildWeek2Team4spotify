@@ -1,0 +1,101 @@
+/* INIZIO ALBUM2 */
+
+.hero-al {
+    height: 300px;
+    padding: 0 0 20px 20px;
+
+    background-color: rgb(93, 20, 93);
+
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+.img-hero-al {
+    width: 150px;
+}
+.dettagli-hero-al {
+    display: flex;
+}
+.dettagli-hero-al img {
+    width: 40px;
+
+    border-radius: 50%;
+}
+
+
+.player-hero-al {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.serie-icone-al {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.elenco-al {
+    display: flex;
+    gap: 10px;
+}
+.icon-list {
+    display: flex;
+    align-items: center;
+}
+
+.caption-lista-al {
+    display: flex;
+
+    border-bottom: solid 1px white;
+}
+.numerazione-al {
+    padding-left: 10px;
+}
+.titolazione-al {
+    padding-left: 10px;
+    width: 50%;
+}
+.riproduzioni-al {
+    width: 17%;
+
+    display: flex;
+    justify-content: end;
+}
+.caption-lista-al div {
+    width: 24%;
+    display: flex;
+    align-items: center;
+
+    display: flex;
+    justify-content: end;
+}
+
+.container-lista-canzoni-al {
+    padding-left: 25px;
+}
+.canzone-lista-al {
+    display: flex;
+    align-items: center;
+}
+.song-artist-al {
+    padding-left: 2px;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+}
+.no-margin {
+    margin: 0;
+}
+.to-right {
+    display: flex;
+    justify-content: end;
+}
+.riproduzioni-lista-al {
+    width: 30%;
+}
+.durata-al {
+    width: 24%;
+}
+
+/* FINE ALBUM2 */
