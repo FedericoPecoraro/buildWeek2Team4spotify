@@ -14,6 +14,10 @@
 </head>
 
 <body class="body-hp">
+  <audio 
+  id="audioPlayer"
+  src="">
+  </audio>
   <div class="main">
     <div class="sidebar">
       <div class="nav">
@@ -24,7 +28,7 @@
 
         <div class="nav-option">
           <a href=""><i class="fa-solid fa-magnifying-glass icon-nav-hp"></i></a>
-          <a class="nav-button-hp" href="#">Cerca</a>
+          <a class="nav-button-hp" href="./search.html">Cerca</a>
         </div>
       </div>
 
@@ -339,20 +343,18 @@
           <h2>viola feat salmo</h2>
           <h4 class="leftDiv2">fedez</h4>
         </div>
-        <a href="#"><i class="fa-solid fa-heart heart-fill"></i></a>
+        <a href="#"><i id="heart" class="fa-solid fa-heart heart-fill"></i></a>
 
       </div>
 
       <div class="centralDiv">
         <div class="svg">
-          <a href="#"><i class="fa-solid fa-shuffle icon-player-hp dis-none"></i></a>
-
-          <a href="#"><i class="fa-solid fa-backward-step icon-player-hp dis-none"></i></a>
-          <a href="#"><i class="fa-solid fa-circle-play icon-play-hp"></i></a>
-
-          <a href="#"><i class="fa-solid fa-forward-step icon-player-hp dis-none"></i></a>
-
-          <a href="#"><i class="fa-solid fa-retweet icon-player-hp dis-none"></i></a>
+          <a href="#"><i id="shuffle" class="fa-solid fa-shuffle icon-player-hp dis-none"></i></a>
+          <a href="#"><i id="backbtn" class="fa-solid fa-backward-step icon-player-hp dis-none"></i></a>
+          <a href="#"><i id="play-icon" class="fa-solid fa-circle-play icon-play-hp"></i></a> 
+          <a href=""><i id="stop-icon" class="fa-regular fa-circle-pause"></i></a> <!-- aggiungere con id in css il display none e la dimensione come il tasto play -->
+          <a href="#"><i id="upbtn" class="fa-solid fa-forward-step icon-player-hp dis-none"></i></a>
+          <a href="#"><i id="repeater" class="fa-solid fa-retweet icon-player-hp dis-none"></i></a>
         </div>
         <div>
           <div class="progress-container">
@@ -375,8 +377,8 @@
 
         <a href="#"><i class="fa-regular fa-bookmark icon-player-hp dis-none"></i></a>
 
-        <a href="#"><i class="fa-solid fa-volume-high icon-player-hp"></i></a>
-
+        <a href="#"><i id="volume-up" class="fa-solid fa-volume-high icon-player-hp"></i></a>
+        <a href=""><i id="volume-mute" class="fa-solid fa-volume-xmark"></i></a> <!-- inserire regola css con display none -->
         <div>
           <div class="progress-container">
             <div class="progress-bar" id="progress-bar">
@@ -451,6 +453,8 @@
       <p>La tua libreria</p>
     </div>
   </div>
+
+  <script src="./js/homepage.js"></script>
 </body>
 
 </html>
