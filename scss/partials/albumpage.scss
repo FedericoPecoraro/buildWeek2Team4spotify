@@ -1,32 +1,44 @@
 /* INIZIO ALBUM2 */
 
 .hero-al {
-  height: 350px;
+  height: 700px;
   padding: 0 0 20px 20px;
 
   background: rgb(167, 79, 173);
   background: linear-gradient(
     180deg,
     rgba(167, 79, 173, 1) 13%,
-    rgba(64, 23, 67, 1) 85%
+    rgba(18, 18, 18, 0.2) 100%
   );
 
   display: flex;
-  align-items: end;
+  align-items: center;
 }
 .img-hero-al {
-  width: 200px;
+  width: 300px;
   border-radius: 5px;
+  box-shadow: 0px 0px 30px 20px rgba(0,0,0,0.1);
 }
 .album-content-al {
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding-left: 15px;
-  gap: 5px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
+
+.album-content-al span{
+  padding-left: 7px;
+}
+
+.content-hero-al{
+  display: flex;
+}
+
 .title-album {
-  font-size: 60px;
+  font-size: 100px;
   font-weight: 700;
 }
 .pt-album {
@@ -41,6 +53,19 @@
   width: 30px;
 
   border-radius: 50%;
+
+  margin-right: 10px;
+
+  margin-left: 5px;
+}
+
+.dettagli-hero-al p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dettagli-hero-al span{
+  font-weight: 400;
 }
 
 .player-hero-al {
@@ -52,12 +77,30 @@
 .serie-icone-al {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+  font-size: 40px;
+  margin: 25px 0 25px 0;
+  color: #A7A7A7;
 }
 .elenco-al {
   display: flex;
   gap: 10px;
+  font-size: 22px;
+  color: #A7A7A7;
 }
+
+.play-grande-al{
+  font-size: 90px;
+  background-color: black;
+  border-radius: 50px;
+  color: #1ED760;
+  margin-right: 10px;
+}
+
+.colore-icon-al{
+  color: #A7A7A7;
+}
+
 .icon-list {
   display: flex;
   align-items: center;
@@ -65,13 +108,12 @@
 
 .caption-lista-al {
   display: flex;
-
   position: sticky;
   top: 68px;
   z-index: 1000;
-
-  background-color: #121212;
-  border-bottom: solid 1px white;
+  border-bottom: solid 0.5px #a7a7a756;
+  color: #A7A7A7;
+  padding-bottom: 10px;
 }
 .numerazione-al {
   padding-left: 10px;
@@ -81,13 +123,12 @@
   width: 50%;
 }
 .riproduzioni-al {
-  width: 17%;
-
+  width: 18.7%;
   display: flex;
   justify-content: end;
 }
 .caption-lista-al div {
-  width: 24%;
+  width: 23.5%;
   display: flex;
   align-items: center;
 
@@ -97,6 +138,7 @@
 
 .container-lista-canzoni-al {
   padding-left: 25px;
+  color: #A7A7A7;
 }
 .canzone-lista-al {
   display: flex;
@@ -112,6 +154,11 @@
 .no-margin {
   margin: 0;
 }
+
+.white-al{
+  color: white;
+}
+
 .to-right {
   display: flex;
   justify-content: end;
