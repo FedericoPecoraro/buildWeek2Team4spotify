@@ -44,17 +44,19 @@
   font-weight: bold;
 }
 .main-content {
+  position: relative;
   background-color: #121212;
   flex: 1;
   border-radius: 1rem;
   overflow: auto;
-  padding: 0 1.5rem 0 1.5rem;
   margin-right: 0.5rem;
 }
 
 /* width */
 .main-content::-webkit-scrollbar {
   width: 10px;
+  position: absolute;
+  z-index: 100;
 }
 
 /* Track */
@@ -291,14 +293,15 @@ a {
 }
 
 .sticky-nav {
+  width: 100%;
   position: sticky;
   top: 0;
-  background-color: #121212;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .sticky-nav-icons {
@@ -306,6 +309,7 @@ a {
 }
 
 .sticky-nav-options {
+  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -331,6 +335,10 @@ a {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.temporanea {
+  padding: 0 1.5rem 0 1.5rem;
 }
 
 .card-container {
@@ -558,9 +566,6 @@ a {
 
 .vol-bar::-webkit-slider-thumb {
   appearance: none;
-}
-.friend {
-  display: none;
 }
 .friends {
   display: flex;
