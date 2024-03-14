@@ -225,13 +225,20 @@ class Player {
   const player = new Player();
   
   const homePageAlbum = [
-    301797, 401371, 508448701, 392863987, 314982747, 90302, 544889292, 119420782, 87420682, 309377597, 262561252, 288437072, 420621057, 75621062, 491005205, 445615925
+    301797, 401371, 508448701, 392863987, 309377597, 262561252,
   ]
+  const homePageAlbum2 = [ 314982747, 90302, 544889292, 119420782, 87420682,]
+
+  const homePageAlbum3 = [288437072, 420621057, 75621062, 491005205, 445615925]
+
+  const div1 = document.querySelector('.card-container')
+
+  const div2 = document.querySelector('.card-container2')
 
   const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
   
-  function albumCicle(clonesCount) {
-    homePageAlbum.forEach(albumId => {
+  function albumCicle(album, container) {
+    album.forEach(albumId => {
   fetch(apiUrl + albumId) 
     .then(response => {
       if (!response.ok) {
@@ -241,7 +248,7 @@ class Player {
     })
     .then(albumData => {
       const albumTemplate = document.querySelector('#albumTemplate').content.cloneNode(true);
-      const albumContainer = document.querySelector('.card-container')
+      const albumContainer = container
       
       albumTemplate.querySelector('.card-title').textContent = albumData.title;
       albumTemplate.querySelector('.card-img').src = albumData.cover;
@@ -250,23 +257,27 @@ class Player {
 
       albumContainer.appendChild(albumTemplate);
     })
-    
   })
-  addCardContainers(clonesCount);
-  }
+  addCardContainers();
+}
 
-  function addCardContainers(clonesCount) {
-    const cardTemplate = document.querySelector('#cardTemplate')
+//function addCardContainers(clonesCount) {
+//  const cardTemplate = document.querySelector('#cardTemplate')
+//  
+//  for (let i = 0; i < 5; i++) {
+//    const clonedCard = cardTemplate.content.cloneNode(true);
+//    container.appendChild(clonedCard);
+//  }
+//}
+//  
+  
+    const album = [homePageAlbum,homePageAlbum2,homePageAlbum3]
 
-    for (let i = 0; i < 5; i++) {
-      const clonedCard = cardTemplate.content.cloneNode(true);
-      container.appendChild(clonedCard);
-    }
-  }
-  window.onload = function (){
-    albumCicle(5);
+    albumCicle(homePageAlbum, div1)
 
-  }
+    albumCicle(homePageAlbum2,div2)
+
+  
 
 
 
