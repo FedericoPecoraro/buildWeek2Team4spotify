@@ -24,6 +24,10 @@
 }
 
 @media screen and (max-width: 768px) { 
+
+      .sticky-nav-icons {
+        display: none;
+      }
       .sidebar{
         display: none;
       }
@@ -68,6 +72,7 @@
           padding: 1%;
           height: 9vh;
           position: fixed;
+          left: 0;
           z-index: 20;
           bottom: 73px;
           border-radius: 0; 

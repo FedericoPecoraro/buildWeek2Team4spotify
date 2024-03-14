@@ -200,18 +200,22 @@ a {
 
 .options {
   display: flex;
-  justify-content: flex-start;
+  justify-content:space-between;
+  align-items: center;
   gap :75px;
   padding: 1rem 0.5rem;
   background-color: #121212;
   position: sticky;
-  top: 0;
+  top: 0.4px;
+  right: 2px;
   z-index: 100;
-  margin-top: 0.5rem;
   & a{
     color: white;
     font-weight: bold;
   }
+}
+.heading-friend {
+  font-size: 20px;
 }
 .block-library-hp {
   display: flex;
@@ -230,7 +234,6 @@ a {
 
 .icons i {
   opacity: 0.75;
-  margin-right: 1rem;
 }
 
 .icons i:hover {
@@ -306,6 +309,7 @@ a {
   width: calc(100% - 372px);
   position: fixed;
   top: 0;
+  margin-top: 8px;
   right: 16px;
   display: flex;
   justify-content: space-between;
@@ -313,14 +317,26 @@ a {
   padding: 1rem 0;
   z-index: 10000;
   transition-property: background-color;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.widthNav {
+  width: calc(100% - 703px);
+    right: 344px;
 }
 
+.green {
+  background-color: green;
+}
 .sticky-nav-icons {
   margin-left: 0.75rem;
   position: absolute;
   left: 1%;
   top: 30px;
+}
+.color-nav {
+  background-color: #121212;
 }
 
 .sticky-nav-options {
@@ -382,10 +398,12 @@ a {
 .card-img {
   width: 100%;
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .card-title {
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .card-info {
@@ -398,10 +416,10 @@ a {
 }
 
 .recently-played {
-  margin-left: 1.5rem;
   font-size: 25px;
   font-weight: bold;
   margin: 2rem 3.2rem 1rem 1.5rem;
+  padding-top: 5rem;
 }
 .title-section-hp {
   font-size: 25px;
@@ -607,6 +625,10 @@ a {
   padding: 0 0.5rem;
   overflow: scroll;
   display: none;
+  margin-right: 0.5rem;
+}
+.displayB {
+  display: block;
 }
 
 /* width */
@@ -631,12 +653,13 @@ a {
 
 .friends {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  margin-left: 15px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 30px 0 20px 15px;
 }
 .friend-content{
   color: #B8B8B8;
+  width: 12rem;
 } 
   
 .friend-img {
@@ -645,19 +668,19 @@ a {
   margin-right: 5px;
 }
 .friend-name {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
 }
 .friend-song {
-  font-size: 12px;
-  padding-top: 5px;
+  font-size: 13px;
+  margin: 0.4rem 0 0.1rem 0;
 }
 .friend-album {
-  font-size: 12px;
+  font-size: 13px;
   padding-top: 3px;
 }
 .friend-time {
-  font-size: 12px;
+  font-size: 13px;
   color: #B8B8B8;
 }
 .friend-icon {
@@ -666,7 +689,7 @@ a {
 #player {
   display: flex;
   background-color: black;
-  padding: 2% 1% 2% 1%;
+  padding: 2% 2% 2% 1%;
   color: white;
   width: 100%;
   height: 11vh;
@@ -685,7 +708,7 @@ a {
 }
 
 .leftDiv img {
-  width: 80px;
+  width: 65px;
   margin: 1% 4% 2% 1%;
 }
 
@@ -718,9 +741,19 @@ a {
 }
 .icon-play-hp {
   font-size: 40px;
+  margin-left: 0.6rem;
+  margin-right: 0.1rem;
 }
 .icon-play-hp:hover {
-  font-size: 45px;
+  transform: scale(1.2,1.2);
+}
+
+.icon-stop-hp {
+  font-size: 40px;
+  margin-right: 0.7rem;
+}
+.icon-stop-hp:hover {
+  transform: scale(1.2,1.2);
 }
 
 .progress-container {
@@ -741,6 +774,7 @@ a {
 .centralDiv .svg {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 10px;
   gap: 10px;
 }
