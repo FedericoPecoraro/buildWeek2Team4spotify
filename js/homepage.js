@@ -225,11 +225,11 @@ class Player {
   const player = new Player();
   
   const homePageAlbum = [
-    301797, 401371, 508448701, 2321086975, 392863987, 314982747, 90302, 544889292, 2202743547, 119420782, 87420682, 309377597, 262561252, 288437072, 420621057, 75621062, 491005205, 445615925
+    301797, 401371, 508448701, 392863987, 314982747, 90302, 544889292, 119420782, 87420682, 309377597, 262561252, 288437072, 420621057, 75621062, 491005205, 445615925
   ]
 
   const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
-
+  
   function albumCicle(clonesCount) {
     homePageAlbum.forEach(albumId => {
   fetch(apiUrl + albumId) 
@@ -240,31 +240,49 @@ class Player {
       return response.json();
     })
     .then(albumData => {
-      const albumTemplate = document.querySelector('#albumContainer').content.cloneNode(true);
-
-
+      const albumTemplate = document.querySelector('#albumTemplate').content.cloneNode(true);
+      const albumContainer = document.querySelector('.card-container')
       
       albumTemplate.querySelector('.card-title').textContent = albumData.title;
       albumTemplate.querySelector('.card-img').src = albumData.cover;
-      albumTemplate.querySelector('.card-info').textContent = albumData.artist.name;
+      
       //albumTemplate.querySelector('').textContent = albumData.release_date;
 
       albumContainer.appendChild(albumTemplate);
     })
-    .catch(error => {
-      console.error('errore nella richiesta', error);
-    });
+    
   })
   addCardContainers(clonesCount);
   }
 
   function addCardContainers(clonesCount) {
-    const cardTemplate = document.querySelector('#cardTemplate');
-    const container = document.querySelector('#cardContainersContainer');
+    const cardTemplate = document.querySelector('#cardTemplate')
 
-    for (let i = 0; i < clonesCount; i++) {
+    for (let i = 0; i < 5; i++) {
       const clonedCard = cardTemplate.content.cloneNode(true);
       container.appendChild(clonedCard);
     }
   }
-  albumCicle(5);
+  window.onload = function (){
+    albumCicle(5);
+
+  }
+
+
+
+
+
+
+  
+//<div id="albumContainer"></div>
+//  <template id="albumTemplate">
+//  <div class="card">
+//      <img src="" class="card-img" alt="" />
+//      <p class="card-title"></p>
+//      <p class="card-info"></
+//  </div>
+//</template>
+//<template id="cardTemplate">
+//  <div class="card">
+//  </div>
+//</template>
