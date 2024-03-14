@@ -240,15 +240,16 @@ class Player {
       return response.json();
     })
     .then(albumData => {
-      const albumTemplate = document.querySelector('').content.cloneNode(true);
+      const albumTemplate = document.querySelector('#albumContainer').content.cloneNode(true);
+
 
       
-      albumTemplate.querySelector('').textContent = albumData.title;
-      albumTemplate.querySelector('').src = albumData.cover;
-      albumTemplate.querySelector('').textContent = albumData.artist.name;
-      albumTemplate.querySelector('').textContent = albumData.release_date;
+      albumTemplate.querySelector('.card-title').textContent = albumData.title;
+      albumTemplate.querySelector('.card-img').src = albumData.cover;
+      albumTemplate.querySelector('.card-info').textContent = albumData.artist.name;
+      //albumTemplate.querySelector('').textContent = albumData.release_date;
 
-      document.querySelector('').appendChild(albumTemplate);
+      albumContainer.appendChild(albumTemplate);
     })
     .catch(error => {
       console.error('errore nella richiesta', error);
