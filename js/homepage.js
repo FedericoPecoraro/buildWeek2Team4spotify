@@ -286,7 +286,7 @@ class Player {
 
 const apiUrl2 = "https://striveschool-api.herokuapp.com/api/deezer/artist/"
 
-const homeArtistPage = [261565, 11503771, 409, 705, 404]
+const homeArtistPage = [10346, 11503771, 409, 705, 404]
 const div6 = document.querySelector('#card-container6')
 
 
