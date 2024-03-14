@@ -586,19 +586,26 @@ a {
 }
 
 .sticky-nav {
-  width: 100%;
-  position: sticky;
+  background-color: green;
+  height: 60px;
+  width: 73.3%;
+  position: fixed;
   top: 0;
-  right: 0;
+  left: 356px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
   z-index: 10000;
+  transition-property: background-color;
+  transition-duration: 0.8s;
 }
 
 .sticky-nav-icons {
   margin-left: 0.75rem;
+  position: absolute;
+  left: 1%;
+  top: 30px;
 }
 
 .sticky-nav-options {
@@ -607,6 +614,9 @@ a {
   display: flex;
   align-items: center;
   gap: 15px;
+  position: absolute;
+  top: 30px;
+  right: -0.1%;
 }
 
 .nav-item {
