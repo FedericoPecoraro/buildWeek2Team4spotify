@@ -18,7 +18,7 @@ document.getElementById('eye-icon-visibile').addEventListener('click', toggleEle
 function validateForm(){
     let email = document.getElementById('email-login').value;
     let password = document.getElementById('password-login').value;
-    let loginButton = document.getElementById('loginButton');
+    let loginButton = document.getElementById('login-btn');
     let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
     let formValid = true;
