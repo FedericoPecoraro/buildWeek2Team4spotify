@@ -261,7 +261,7 @@ class Player {
       
       albumTemplate.querySelector('.card-title').textContent = albumData.title || albumData.name ;
       albumTemplate.querySelector('.card-img').src = albumData.cover || albumData.picture;
-      
+      albumTemplate.querySelector('.ref').href = `albumPage.html?${albumData.id}`
       //albumTemplate.querySelector('').textContent = albumData.release_date;
 
       albumContainer.appendChild(albumTemplate);
