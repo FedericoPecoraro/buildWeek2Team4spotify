@@ -224,9 +224,9 @@ class Player {
   
   const player = new Player();
   
-  const homePageAlbum = [301797, 401371]
+  const homePageAlbum = [ 544889292,401371]
 
-  const homePageAlbum2 = [ 314982747, 90302, 544889292, 119420782, 87420682,]
+  const homePageAlbum2 = [301797, 90302, 87420682, 119420782, 314982747,]
 
   const homePageAlbum3 = [288437072, 420621057, 75621062, 491005205, 445615925]
 
@@ -246,9 +246,9 @@ class Player {
 
   const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
   
-  function albumCicle(album, container) {
+  function albumCicle(album, container, url) {
     album.forEach(albumId => {
-  fetch(apiUrl + albumId) 
+  fetch(url + albumId) 
     .then(response => {
       if (!response.ok) {
         throw new Error('error request');
@@ -259,8 +259,8 @@ class Player {
       const albumTemplate = document.querySelector('#albumTemplate').content.cloneNode(true);
       const albumContainer = container
       
-      albumTemplate.querySelector('.card-title').textContent = albumData.title;
-      albumTemplate.querySelector('.card-img').src = albumData.cover;
+      albumTemplate.querySelector('.card-title').textContent = albumData.title || albumData.name ;
+      albumTemplate.querySelector('.card-img').src = albumData.cover || albumData.picture;
       
       //albumTemplate.querySelector('').textContent = albumData.release_date;
 
@@ -269,15 +269,15 @@ class Player {
   })
   
 }  
-    albumCicle(homePageAlbum, div1)
+    albumCicle(homePageAlbum, div1, apiUrl)
 
-    albumCicle(homePageAlbum2,div2)
+    albumCicle(homePageAlbum2,div2, apiUrl)
 
-    albumCicle(homePageAlbum3,div3)
+    albumCicle(homePageAlbum3,div3, apiUrl)
     
-    albumCicle(homePageAlbum4,div4)
+    albumCicle(homePageAlbum4,div4, apiUrl)
 
-    albumCicle(homePageAlbum5,div5)
+    albumCicle(homePageAlbum5,div5, apiUrl)
 
   
 
@@ -285,6 +285,14 @@ class Player {
 
 
 const apiUrl2 = "https://striveschool-api.herokuapp.com/api/deezer/artist/"
+
+const homeArtistPage = [261565, 11503771, 409, 705, 404]
+const div6 = document.querySelector('#card-container6')
+
+
+albumCicle(homeArtistPage, div6, apiUrl2 )
+
+
 
   
 //<div id="albumContainer"></div>
