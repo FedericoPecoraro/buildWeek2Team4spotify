@@ -224,16 +224,25 @@ class Player {
   
   const player = new Player();
   
-  const homePageAlbum = [
-    301797, 401371, 508448701, 392863987, 309377597, 262561252,
-  ]
+  const homePageAlbum = [301797, 401371]
+
   const homePageAlbum2 = [ 314982747, 90302, 544889292, 119420782, 87420682,]
 
   const homePageAlbum3 = [288437072, 420621057, 75621062, 491005205, 445615925]
 
+  const homePageAlbum4 = [508448701, 392863987, 309377597, 262561252, 72470162]
+
+  const homePageAlbum5 = [506656591, 90799, 443350855, 212377, 662259]
+
   const div1 = document.querySelector('.card-container')
 
-  const div2 = document.querySelector('.card-container2')
+  const div2 = document.querySelector('#container2')
+
+  const div3 = document.querySelector('#container3')
+
+  const div4 = document.querySelector('#container4')
+
+  const div5 = document.querySelector('#container5')
 
   const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
   
@@ -258,31 +267,24 @@ class Player {
       albumContainer.appendChild(albumTemplate);
     })
   })
-  addCardContainers();
-}
-
-//function addCardContainers(clonesCount) {
-//  const cardTemplate = document.querySelector('#cardTemplate')
-//  
-//  for (let i = 0; i < 5; i++) {
-//    const clonedCard = cardTemplate.content.cloneNode(true);
-//    container.appendChild(clonedCard);
-//  }
-//}
-//  
   
-    const album = [homePageAlbum,homePageAlbum2,homePageAlbum3]
-
+}  
     albumCicle(homePageAlbum, div1)
 
     albumCicle(homePageAlbum2,div2)
 
+    albumCicle(homePageAlbum3,div3)
+    
+    albumCicle(homePageAlbum4,div4)
+
+    albumCicle(homePageAlbum5,div5)
+
   
 
 
 
 
-
+const apiUrl2 = "https://striveschool-api.herokuapp.com/api/deezer/artist/"
 
   
 //<div id="albumContainer"></div>
