@@ -301,12 +301,12 @@ a {
 }
 
 .sticky-nav {
-  background-color: green;
+  background-color: transparent;
   height: 60px;
-  width: 73.3%;
+  width: calc(100% - 372px);
   position: fixed;
   top: 0;
-  left: 356px;
+  right: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -606,7 +606,29 @@ a {
   height: 91%;
   padding: 0 0.5rem;
   overflow: scroll;
+  display: none;
 }
+
+/* width */
+.friend::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.friend::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.friend::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+.friend::-webkit-scrollbar-thumb:hover {
+  background: #292929;
+}
+
 .friends {
   display: flex;
   align-items: flex-start;

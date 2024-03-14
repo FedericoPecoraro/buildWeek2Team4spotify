@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .hero-ar {
   height: 700px;
-  padding: 0 0 20px 20px;
+  padding-bottom: 20px;
   font-size: 20px;
   background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0) 30%, rgb(18, 18, 18) 100%), url(../assets/imgs/tenacious-d.jpg);
   background-size: cover;
@@ -14,6 +14,10 @@
 .title-album-al {
   font-size: 100px;
   font-weight: 700;
+}
+
+.art-heading-al {
+  padding-left: 20px;
 }
 
 .player-hero-ar {
@@ -586,12 +590,12 @@ a {
 }
 
 .sticky-nav {
-  background-color: green;
+  background-color: transparent;
   height: 60px;
-  width: 73.3%;
+  width: calc(100% - 372px);
   position: fixed;
   top: 0;
-  left: 356px;
+  right: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -893,6 +897,27 @@ a {
   height: 91%;
   padding: 0 0.5rem;
   overflow: scroll;
+  display: none;
+}
+
+/* width */
+.friend::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.friend::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.friend::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+.friend::-webkit-scrollbar-thumb:hover {
+  background: #292929;
 }
 
 .friends {
