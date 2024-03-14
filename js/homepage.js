@@ -224,4 +224,34 @@ class Player {
   
   const player = new Player();
   
-  
+  const homePageAlbum = [
+    301797, 401371, 508448701, 2321086975, 392863987, 314982747, 90302, 544889292, 2202743547, 119420782, 87420682, 309377597, 262561252, 288437072, 420621057, 75621062, 491005205, 445615925
+  ]
+
+  const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
+
+  function albumCicle() {
+    homePageAlbum.forEach(albumId => {
+  fetch(apiUrl + albumId) 
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('error request');
+      }
+      return response.json();
+    })
+    .then(albumData => {
+      const albumTemplate = document.querySelector('').content.cloneNode(true);
+
+      albumTemplate.querySelector('').textContent = albumData.title;
+      albumTemplate.querySelector('').src = albumData.cover;
+      albumTemplate.querySelector('').textContent = albumData.artist.name;
+      albumTemplate.querySelector('').textContent = albumData.release_date;
+
+      document.querySelector('').appendChild(albumTemplate);
+  })
+  .catch(error => {
+    console.error('errore richiesta', error);
+  });
+    });
+  }
+  albumCicle()
