@@ -230,7 +230,7 @@ class Player {
 
   const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
 
-  function albumCicle() {
+  function albumCicle(clonesCount) {
     homePageAlbum.forEach(albumId => {
   fetch(apiUrl + albumId) 
     .then(response => {
@@ -242,16 +242,28 @@ class Player {
     .then(albumData => {
       const albumTemplate = document.querySelector('').content.cloneNode(true);
 
+      
       albumTemplate.querySelector('').textContent = albumData.title;
       albumTemplate.querySelector('').src = albumData.cover;
       albumTemplate.querySelector('').textContent = albumData.artist.name;
       albumTemplate.querySelector('').textContent = albumData.release_date;
 
       document.querySelector('').appendChild(albumTemplate);
-  })
-  .catch(error => {
-    console.error('errore richiesta', error);
-  });
+    })
+    .catch(error => {
+      console.error('errore nella richiesta', error);
     });
+  })
+  addCardContainers(clonesCount);
   }
-  albumCicle()
+
+  function addCardContainers(clonesCount) {
+    const cardTemplate = document.querySelector('#cardTemplate');
+    const container = document.querySelector('#cardContainersContainer');
+
+    for (let i = 0; i < clonesCount; i++) {
+      const clonedCard = cardTemplate.content.cloneNode(true);
+      container.appendChild(clonedCard);
+    }
+  }
+  albumCicle(5);
