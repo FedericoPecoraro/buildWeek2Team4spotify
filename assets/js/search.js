@@ -77,7 +77,7 @@ function searchResults(index = "") {
                 <img src="${content.album.cover}"></img>
             </div>
             <div class="searchText">
-            <h3><a href="album.html?id=${data.data[i].id}">${content.title}</a></h3>
+            <h3><a href="albumPage.html?id=${data.data[i].id}">${content.title}</a></h3>
             <p><a href="artistPage.html?id=${content.artist.id}">${content.artist.name}</a><p>
             </div>
             `;
