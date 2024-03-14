@@ -1,27 +1,64 @@
 /* INIZIO ARTIST2 */
 
 .hero-ar {
-    height: 250px;
+    height: 700px;
+    padding: 0 0 20px 20px;
 
-    background-image: url(../assets/imgs/tenacious-d.jpg);
+    font-size: 20px;
+
+    background-image: 
+    linear-gradient(to bottom, rgba(18, 18, 18, 0)30%, rgba(18, 18, 18, 1)100%),
+    url(../assets/imgs/tenacious-d.jpg);
     background-size: cover;
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+}
+.title-album-al {
+    font-size: 100px;
+    font-weight: 700;
 }
 
 .player-hero-ar {
     display: flex;
     gap: 20px;
 }
+.serie-icone-al {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 40px;
+    margin: 25px 0 25px 0;
+    color: #A7A7A7;
+}
+.serie-icone-al button {
+    padding: 10px 20px;
+    background: none;
+    border-radius: 50px;
+    border: 1px solid #A7A7A7;;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #A7A7A7;
+}
 
 .container-lista-canzoni-ar {
     padding-left: 25px;
+    color: #A7A7A7;
+    margin-bottom: 30px;
 }
 .canzone-lista-ar {
     display: flex;
     align-items: center;
+    padding-top: 30px;
+    font-size: 25px;
+}
+.icona-cantante-ar {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 5px;
 }
 .titolo-song-ar {
     padding-left: 10px;
