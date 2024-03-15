@@ -1,32 +1,15 @@
 //VERSIONE 2
 const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
 
-
 let homeAlbums = [];
-    fetch(apiUrl + homeAlbums, {
-    method: "GET",
-    headers: {
-        "Content-type": "application/json",
-    },
-    })
 
-    /*
-    .then((res) => res.json())
-    .then(dati=> {
-        let title = document.querySelector('#title')
-        let img = document.querySelector('#img')
-
-        title.innerHTML = dati.title
-        img.src = dati.cover
-
-    })
-    */
     function getAlbumIdFromUrlAndRedirect(){
         const url = new URL(window.location.href);
         const idIndex = url.searchParams.get('id');
         if (idIndex) {
             const albumId = parseInt(idIndex);
             homeAlbums.push(albumId);
+            fetchAlbumData(albumId);
         } else {
             console.error('Album ID not found in url.');
         }
@@ -61,13 +44,9 @@ let homeAlbums = [];
 
 document.addEventListener("DOMContentLoaded", function() {
     getAlbumIdFromUrlAndRedirect();
-        if(homeAlbums.length > 0) {
-            fetchAlbumData(homeAlbums[0]);
-        }else{
-            console.log('no album id')
-            }
-});
     console.log(homeAlbums)
+});
+
 
     //VERSIONE ALPHA
    /* const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";

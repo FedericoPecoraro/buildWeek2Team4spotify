@@ -126,7 +126,6 @@ fetch(`https://deezerdevs-deezer.p.rapidapi.com/track/1963530567`, searchOptions
 .then((response) => response.json())
 .then((datas)  => {
   
-  
   playerApi(datas)
   audioElem.src = datas.preview
 })

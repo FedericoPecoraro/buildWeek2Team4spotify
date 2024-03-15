@@ -7,7 +7,6 @@ function toggleHeartColor() {
 
 heart.addEventListener("click", toggleHeartColor);
 
-
 // Lettore audio centrale
 const audioPlayer = document.getElementById('audioPlayer');
 const progressElement = document.getElementById('progress')
@@ -69,7 +68,6 @@ function togglePlayback() {
     
   }
 }
-
 
 togglePlayback() // Inizia la riproduzione all'avvio
 
@@ -161,7 +159,6 @@ function shuffleBtn() {
 
 shuffle.addEventListener('click', shuffleBtn());
 
-
 const repeater = document.getElementById("repeater");
 let clickCount = 0;
 
@@ -181,8 +178,6 @@ function repeaterBtn() {
 }
 
 repeater.addEventListener('click', repeaterBtn());
-
-
 
 
 //RIGHT VOLUME PROGRESS BAR

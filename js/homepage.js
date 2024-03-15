@@ -223,7 +223,9 @@ class Player {
   }
   
   const player = new Player();
-  
+
+
+  //ALBUM
   const homePageAlbum = [ 544889292,401371]
 
   const homePageAlbum2 = [301797, 90302, 87420682, 119420782, 314982747,]
@@ -245,6 +247,8 @@ class Player {
   const div5 = document.querySelector('#container5')
 
   const apiUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
+
+  const apiUrl2 = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
   
   function albumCicle(album, container, url) {
     album.forEach(albumId => {
@@ -261,8 +265,7 @@ class Player {
       
       albumTemplate.querySelector('.card-title').textContent = albumData.title || albumData.name ;
       albumTemplate.querySelector('.card-img').src = albumData.cover || albumData.picture;
-      albumTemplate.querySelector('.ref').href = `albumPage.html?${albumData.id}`
-      //albumTemplate.querySelector('').textContent = albumData.release_date;
+      albumTemplate.querySelector('.ref').href = `albumPage.html?id=${albumData.id}`;
 
       albumContainer.appendChild(albumTemplate);
     })
@@ -281,11 +284,7 @@ class Player {
 
   
 
-
-
-
-const apiUrl2 = "https://striveschool-api.herokuapp.com/api/deezer/artist/"
-
+//ARTIST
 const homeArtistPage = [10346, 11503771, 409, 705, 404]
 const div6 = document.querySelector('#card-container6')
 
@@ -294,16 +293,3 @@ albumCicle(homeArtistPage, div6, apiUrl2 )
 
 
 
-  
-//<div id="albumContainer"></div>
-//  <template id="albumTemplate">
-//  <div class="card">
-//      <img src="" class="card-img" alt="" />
-//      <p class="card-title"></p>
-//      <p class="card-info"></
-//  </div>
-//</template>
-//<template id="cardTemplate">
-//  <div class="card">
-//  </div>
-//</template>
