@@ -6,7 +6,7 @@ let friendDiv = document.querySelector('.friend');
 
 main.onscroll = function () {
     let scrolled = this.querySelector(".child-div-sroll").getBoundingClientRect().top;
-    console.log("Hai scrollato di " + scrolled + " pixel.");
+    
     console.dir(this);
     if (scrolled > -525) {
         navbar.style.backgroundColor = "transparent";

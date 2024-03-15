@@ -184,107 +184,8 @@
                             <i class="far fa-clock"></i>
                         </div>
                     </div>
-                    <ol class="container-lista-canzoni-al">
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p id="song-t" class="no-margin white-al">Ciuciumbala Zuela</p>
-                                    <p id="song-a" class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="canzone-lista-al">
-                                <div class="song-artist-al">
-                                    <p class="no-margin">Ciuciumbala Zuela</p>
-                                    <p class="no-margin">Tenacious D</p>
-                                </div>
-                                <p class="riproduzioni-lista-al to-right">200000000</p>
-                                <p class="durata-al to-right">4.06</p>
-                            </div>
-                        </li>
+                    <ol id="container-tracks" class="container-lista-canzoni-al">
+                    
                     </ol>
                 </div>
 
@@ -617,6 +518,18 @@
             <p>La tua libreria</p>
         </div>
     </div>
+    <template id="tracksTemplate">
+        <li>
+            <div class="canzone-lista-al">
+                <div class="song-artist-al">
+                    <p id="song-t" class="no-margin white-al">Ciuciumbala Zuela</p>
+                    <p id="song-a" class="no-margin">Tenacious D</p>
+                </div>
+                <p class="riproduzioni-lista-al to-right">200000000</p>
+                <p class="durata-al to-right">4.06</p>
+            </div>
+        </li>
+    </template>
 
     <script src="./assets/js/album.js"></script>
     <script src="./assets/js/player.js"></script>
