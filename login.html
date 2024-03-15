@@ -30,20 +30,34 @@
             <hr class="hr-login">
 
             <div class="log-in">
-                <form class="form-login">
+                <form class="form-login" onsubmit="return validateForm()" action="./homepage.html">
                     <label class="label-login">Email or Username</label>
-                    <input class="input-login" type="text" placeholder="Email or username">
+                    <input class="input-login" id="email-login" type="text" placeholder="Email or username">
                     <label class="label-login">Password</label>
-                    <input class="input-login" type="password" placeholder="Password">
+                    <input class="input-login" id="password-login" type="password" placeholder="Password">
                     <i class="fa-regular fa-eye icon-password" id="eye-icon-visibile"></i>
                     <i class="fa-regular fa-eye-slash icon-password" id="eye-icon-privacy"></i>
+                    <div class="switch-login">
+                        <input type="checkbox" id="switch-login" checked>
+                        <label class="switch-label-login" for="switch-login"></label>
+                        <span class="span-login">Remember me</span>
+                    </div>
+                    <button class="btn-login" id="login-btn" type="submit">Log in</button>
 
+                    <a href="#" class="a-login">Forgot your password ? </a>
                 </form>
+
             </div>
 
+            <hr class="hr-login">
+
+            <div class="last-login">
+                <span class="">Don't you have an account?</span>
+                <a class="" href="#">Sign in</a>
+            </div>
         </div>
     </section>
 
-    <script src="./assets/js/login.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
