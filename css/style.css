@@ -86,8 +86,8 @@
 .hero-al {
   height: 700px;
   padding: 0 0 20px 20px;
-  background: rgb(167, 79, 173);
-  background: linear-gradient(180deg, rgb(167, 79, 173) 13%, rgba(18, 18, 18, 0.2) 100%);
+  background: rgb(56, 128, 187);
+  background: linear-gradient(180deg, rgb(29, 106, 168) 13%, rgba(18, 18, 18, 0.2) 100%);
   display: flex;
   align-items: center;
 }
