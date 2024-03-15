@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify - Lettore web: musica per tutti</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/icon/download.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body class="body-hp">
-    <audio id="audioPlayer" src=""></audio>
-    <div class="main">
-      <div class="sidebar">
-        <div class="nav">
-          <div class="nav-option">
-            <a href=""><i class="fa-solid fa-house icon-nav-hp"></i></a>
-            <a class="nav-button-hp" href="#">Home</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Lettore web: musica per tutti</title>
+  <link rel="shortcut icon" href="./assets/icon/download.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
 <body class="body-hp">
 
@@ -56,43 +39,31 @@
           <a class="nav-button-hp" href="#">Home</a>
         </div>
 
-        <div class="library">
-          <div class="options">
-            <div class="lib-option">
-              <div class="block-library-hp">
-                <div class="nav-option">
-                  <a href=""
-                    ><img
-                      src="./assets/icon/library_icon.png"
-                      alt="library icon"
-                  /></a>
-                  <a href="#" class="icon-nav-hp">La tua libreria</a>
-                </div>
+        <div class="nav-option">
+          <a href=""><i class="fa-solid fa-magnifying-glass icon-nav-hp"></i></a>
+          <a class="nav-button-hp" href="./search.html">Cerca</a>
+        </div>
+      </div>
 
-                <div class="icons">
-                  <i class="fa-solid fa-plus nav-option"></i>
-                  <i class="fa-solid fa-arrow-right nav-option"></i>
-                </div>
+      <div class="library">
+        <div class="options">
+          <div class="lib-option">
+            <div class="block-library-hp">
+              <div class=" nav-option">
+                <a href=""><img src="./assets/icon/library_icon.png" alt="library icon" /></a>
+                <a href="#" class="icon-nav-hp">La tua libreria</a>
               </div>
 
-              <div class="button-group-hp">
-                <button class="button-3-hp">Playlist</button>
-                <button class="button-3-hp">Album</button>
-                <button class="button-3-hp">Artisti</button>
+              <div class="icons">
+                <i class="fa-solid fa-plus nav-option"></i>
+                <i class="fa-solid fa-arrow-right nav-option"></i>
               </div>
             </div>
-          </div>
 
-          <div class="box-playlist-hp">
-            <img
-              class="img-playlist-hp"
-              src="./assets/imgs/main/image-11.jpg"
-              width="50"
-              alt=""
-            />
-            <div>
-              <h3 class="title-playlist-hp">Brani che ti piacciono</h3>
-              <p class="details-playlist-hp">Playlist - 666 brani</p>
+            <div class="button-group-hp">
+              <button class="button-3-hp">Playlist</button>
+              <button class="button-3-hp">Album</button>
+              <button class="button-3-hp">Artisti</button>
             </div>
           </div>
         </div>
@@ -369,72 +340,20 @@
             <div class="progress-bar" id="progress-bar">
               <div class="progress" id="progress"></div>
             </div>
+            <div class="duration">0:30</div>
           </div>
+        </div>
+      </div>
 
-          <div class="box-playlist-hp">
-            <img
-              class="img-playlist-hp"
-              src="./assets/imgs/main/image-11.jpg"
-              width="50"
-              alt=""
-            />
-            <div>
-              <h3 class="title-playlist-hp">Brani che ti piacciono</h3>
-              <p class="details-playlist-hp">Playlist - 666 brani</p>
-            </div>
-          </div>
+      <div class="rightDiv">
 
-          <div class="box-playlist-hp">
-            <img
-              class="img-playlist-hp"
-              src="./assets/imgs/main/image-11.jpg"
-              width="50"
-              alt=""
-            />
-            <div>
-              <h3 class="title-playlist-hp">Brani che ti piacciono</h3>
-              <p class="details-playlist-hp">Playlist - 666 brani</p>
-            </div>
-          </div>
+        <a href="#"><i class="fa-solid fa-play play-icon-hp dis-none"></i></a>
 
-          <div class="box-playlist-hp">
-            <img
-              class="img-playlist-hp"
-              src="./assets/imgs/main/image-11.jpg"
-              width="50"
-              alt=""
-            />
-            <div>
-              <h3 class="title-playlist-hp">Brani che ti piacciono</h3>
-              <p class="details-playlist-hp">Playlist - 666 brani</p>
-            </div>
-          </div>
+        <a href="#"><i class="fa-solid fa-microphone icon-player-hp dis-none"></i></a>
 
-          <div class="box-playlist-hp">
-            <img
-              class="img-playlist-hp"
-              src="./assets/imgs/main/image-11.jpg"
-              width="50"
-              alt=""
-            />
-            <div>
-              <h3 class="title-playlist-hp">Brani che ti piacciono</h3>
-              <p class="details-playlist-hp">Playlist - 666 brani</p>
-            </div>
-          </div>
+        <a href="#"><i class="fa-solid fa-list-ul icon-player-hp dis-none"></i></a>
 
-          <div class="box-playlist-hp">
-            <img
-              class="img-playlist-hp"
-              src="./assets/imgs/main/image-11.jpg"
-              width="50"
-              alt=""
-            />
-            <div>
-              <h3 class="title-playlist-hp">Brani che ti piacciono</h3>
-              <p class="details-playlist-hp">Playlist - 666 brani</p>
-            </div>
-          </div>
+        <a href="#"><i class="fa-regular fa-bookmark icon-player-hp dis-none"></i></a>
 
         <a href="#"><i id="volume-up" class="fa-solid fa-volume-high icon-player-hp"></i></a>
         <a href=""><i id="volume-mute" class="fa-solid fa-volume-xmark"></i></a>
@@ -442,11 +361,14 @@
         <div>
           <div class="progress-container">
             <div class="progress-bar" id="progress-bar">
-              <div class="progress" id="progress" style="width: 36%;"></div>
+              <div class="progress" id="progress"></div>
             </div>
           </div>
         </div>
+
+        <a href="#"><i class="fa-solid fa-arrows-turn-right icon-player-hp dis-none"></i></a>
       </div>
+    </section>
 
     <div class="friend">
       <div class="options">
@@ -460,8 +382,8 @@
         <img src="./assets/imgs/michele.jpg" alt="twbs" width="50" height="50" class="friend-img" />
         <div class="friend-content">
           <p class="friend-name">Simone Acquadro</p>
-          <p class="friend-song">Pink Floyd</p>
-          <p class="friend-album"><i class="fa-solid fa-music friend-icon"></i>Time</p>
+          <p class="friend-song">Tenacious-D - Fuck Her Gently</p>
+          <p class="friend-album"><i class="fa-solid fa-music friend-icon"></i>Fred album</p>
         </div>
         <small class="friend-time">now</small>
       </div>
@@ -478,8 +400,8 @@
         <img src="./assets/imgs/michele.jpg" alt="twbs" width="50" height="50" class="friend-img" />
         <div class="friend-content">
           <p class="friend-name">Mirko Cuciuffo</p>
-          <p class="friend-song">Cyberpunk Edgerunners</p>
-          <p class="friend-album"><i class="fa-solid fa-music friend-icon"></i>I Really Want To Stay At Your House</p>
+          <p class="friend-song">Tenacious-D - Fuck Her Gently</p>
+          <p class="friend-album"><i class="fa-solid fa-music friend-icon"></i>Fred album</p>
         </div>
         <small class="friend-time">now</small>
       </div>
@@ -487,8 +409,8 @@
         <img src="./assets/imgs/michele.jpg" alt="twbs" width="50" height="50" class="friend-img" />
         <div class="friend-content">
           <p class="friend-name">Simone Iengo</p>
-          <p class="friend-song">KANA-BOON</p>
-          <p class="friend-album"><i class="fa-solid fa-music friend-icon"></i>Silhouette</p>
+          <p class="friend-song">Tenacious-D - Fuck Her Gently</p>
+          <p class="friend-album"><i class="fa-solid fa-music friend-icon"></i>Fred album</p>
         </div>
         <small class="friend-time">now</small>
       </div>
@@ -514,8 +436,8 @@
         <img src="./assets/imgs/michele.jpg" alt="twbs" width="50" height="50" class="friend-img" />
         <div class="friend-content">
           <p class="friend-name">Nadia Semprebon</p>
-          <p class="friend-song">Doja Cat</p>
-          <p class="friend-album"><i class="fa-solid fa-music friend-icon"></i>You're Right</p>
+          <p class="friend-song">Tenacious-D - Fuck Her Gently</p>
+          <p class="friend-album"><i class="fa-solid fa-music friend-icon"></i>Fred album</p>
         </div>
         <small class="friend-time">now</small>
       </div>
@@ -539,16 +461,10 @@
       <p>Home</p>
     </div>
 
-    <template id="albumTemplate">
-      <div class="card">
-        <a class="ref" href="#"><img src="" class="card-img" alt=""/></a>
-        <p class="card-title"></p>
-        <p class="card-info"></p>
-      </div>
-    </template>
-    <template id="cardTemplate">
-      <div class="card"></div>
-    </template>
+    <div>
+      <i class="fa-solid fa-magnifying-glass icon-cerca-hp "></i>
+      <p>Cerca</p>
+    </div>
 
     <div>
       <i class="fa-regular fa-bookmark icon-libreria-hp "></i>
