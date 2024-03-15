@@ -37,9 +37,18 @@ let homeAlbums = [];
     function displayAlbumData(albumData){
         let title = document.querySelector('#title');
         let img = document.querySelector('#img');
+        let artist = document.querySelector('#artist-des')
+        let span = document.querySelector('#span')
+        let song = document.querySelector('#song-t')
+        let song2 = document.querySelector('#song-a')
 
         title.textContent = albumData.title;
         img.src = albumData.cover;
+        artist.textContent = albumData.artist.name 
+        span.textContent= ' • ' + albumData.release_date + ' • ' + albumData.nb_tracks +' Brani '
+        
+        song.textContent = albumData.tracks.data[0].title
+        song2.textContent = albumData.artist.name 
     }
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -265,6 +265,8 @@ class Player {
       
       albumTemplate.querySelector('.card-title').textContent = albumData.title || albumData.name ;
       albumTemplate.querySelector('.card-img').src = albumData.cover || albumData.picture;
+      albumTemplate.querySelector('.card-info').textContent = albumData.nb_fan || albumData.artist.name 
+
       albumTemplate.querySelector('.ref').href = `albumPage.html?id=${albumData.id}`;
 
       albumContainer.appendChild(albumTemplate);
