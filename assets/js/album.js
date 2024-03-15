@@ -50,41 +50,41 @@ let homeAlbums = [];
         //song.textContent = albumData.tracks.data[0].title
         //song2.textContent = albumData.artist.name 
     }
+    document.addEventListener("DOMContentLoaded", function() {
+                getAlbumIdFromUrlAndRedirect();
+                console.log(homeAlbums)
+            });
+    //function fetchTracks(albumId){
+    //    const apiUrl2 = "https://api.deezer.com/album/90302/tracks";
+    //    fetch (apiUrl2)
+    //    .then(response => {
+    //        if (!response.ok) {
+    //        throw new Error('error request');
+    //        }
+    //        return response.json();
+    //    })
+    //    .then((Data) =>{
+    //        albumCicleTrack(Data)
+    //    })
+    //}
+    //function albumCicleTrack(tracksData){
+    //    const albumContainer = document.querySelector('#container-tracks');
+    //    tracksData.forEach(track => {
+    //        const albumTemplate = document.querySelector('#tracksTemplate').content.cloneNode(true);
+    //        albumTemplate.document.querySelector('#song-t').textContent = Data.title
+    //        albumTemplate.document.querySelector('#song-a').textContent = Data.artist.name
+    //        albumContainer.appendChild(albumTemplate);
+    //    
+    //    })
+//
+    //    }
+    //    
+//
+    //    fetchTracks(homeAlbums)
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    getAlbumIdFromUrlAndRedirect();
-    console.log(homeAlbums)
-});
 
-    /*const apiUrl2 = `https://api.deezer.com/album/${homeAlbums}/tracks`;
-    function albumCicleTrack(){
-        homeAlbums.forEach(albumId => {
-        fetch(apiUrl) 
-        .then(response => {
-            if (!response.ok) {
-            throw new Error('error request');
-            }
-            return response.json();
-        })
-        .then(Data => {
-            const albumTemplate = document.querySelector('#tracksTemplate').content.cloneNode(true);
-            const albumContainer = document.querySelector('#container-tracks')
-            albumTemplate.document.querySelector('#song-t').textContent = Data.title
-            albumTemplate.document.querySelector('#song-a').textContent = Data.artist.name
-            albumContainer.appendChild(albumTemplate);
-        
-        })
-        })
-        
-    } 
-        albumCicleTrack()*/
-
-
-
-
-
-
+ 
 
 
 
